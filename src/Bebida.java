@@ -18,11 +18,11 @@ public class Bebida extends Plato {
         this.tieneAzucar = tieneAzucar;
     }
 
-    public Bebida(String nombre, double precio, int calorias, boolean cafeina, boolean azucar){
+    public Bebida(String nombre, double precio, int calorias, boolean tieneCafeina, boolean tieneAzucar){
         this.setNombre(nombre);
         this.setPrecio(precio);
         this.setNumeroCalorias(calorias);
-        tieneAzucar = azucar;
-        tieneCafeina = cafeina;
+        this.tieneAzucar = tieneCafeina;
+        this.tieneCafeina = tieneAzucar;
     }
 }

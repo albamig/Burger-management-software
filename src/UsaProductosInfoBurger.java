@@ -14,6 +14,5 @@ public class UsaProductosInfoBurger {
         Combo menus = new Combo(platos);
         System.out.println(menus.getNumeroCalorias());
         System.out.println(menus.getPrecioCombo());
-        }
     }
 }
