@@ -22,7 +22,7 @@ public class Combo extends Producto {
             precio += grupoPlatos.get(i).getPrecio();
         }
 
-        return precio*0.2;
+        return precio*0.8;
     }
 
     public int getNumeroCalorias() {

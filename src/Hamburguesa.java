@@ -11,7 +11,7 @@ public class Hamburguesa extends Plato {
         this.ingredientes = ingeredientes;
     }
 
-    public Hamburguesa(ArrayList<String> ingredientes, String nombre, double precio, int calorias){
+    public Hamburguesa(String nombre, double precio, int calorias, ArrayList<String> ingredientes){
         this.setNombre(nombre);
         this.setPrecio(precio);
         this.setNumeroCalorias(calorias);
