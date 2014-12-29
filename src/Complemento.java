@@ -9,5 +9,11 @@ public class Complemento extends Plato{
         this.numeroComensales = numeroComensales;
     }
 
+    public Complemento(String nombre, double precio, int numeroPersonas, int calorias){
+        this.setNombre(nombre);
+        this.setPrecio(precio);
+        this.setNumeroCalorias(calorias);
+        numeroComensales = numeroPersonas;
 
+    }
 }

@@ -1,14 +1,20 @@
 import java.util.ArrayList;
 
 public class Hamburguesa extends Plato {
-    private ArrayList<String> ingeredientes;
+    private ArrayList<String> ingredientes;
 
     public ArrayList<String> getIngeredientes() {
-        return ingeredientes;
+        return ingredientes;
     }
 
     public void setIngeredientes(ArrayList<String> ingeredientes) {
-        this.ingeredientes = ingeredientes;
+        this.ingredientes = ingeredientes;
     }
 
+    public Hamburguesa(ArrayList<String> ingredient, String nombre, double precio, int calorias){
+        this.setNombre(nombre);
+        this.setPrecio(precio);
+        this.setNumeroCalorias(calorias);
+        ingredientes = ingredient;
+    }
 }
