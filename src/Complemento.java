@@ -1,4 +1,7 @@
 /**
+ * La clase <code>Complemento</code> implementa las
+ * caracteristicas del <code>Plato</code> complemento.
+ *
  *@author Alberto Amigo y Sergio Delgado
  */
 public class Complemento extends Plato{

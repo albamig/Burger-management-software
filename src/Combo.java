@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 
 /**
+ * La clase <code>Combo</code> implementa los platos contenidos
+ * en un combo y sus caracteristicas.
+ *
  *@author Alberto Amigo y Sergio Delgado
  */
 public class Combo extends Producto {

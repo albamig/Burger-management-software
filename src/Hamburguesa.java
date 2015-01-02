@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 
 /**
+ * La clase <code>Hamburguesa</code> implementa las caracteristicas
+ * del <code>Plato</code> hamburguesa.
+ *
  *@author Alberto Amigo y Sergio Delgado
  */
 public class Hamburguesa extends Plato {

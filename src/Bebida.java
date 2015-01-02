@@ -1,4 +1,7 @@
 /**
+ *La clase <code>Bebida</code> implementa las caracteristicas
+ * del <code>Plato</code> Bebida.
+ *
  *@author Alberto Amigo y Sergio Delgado
  */
 public class Bebida extends Plato {
@@ -6,6 +9,8 @@ public class Bebida extends Plato {
     private boolean tieneAzucar;
 
     /**
+     *Devuelve verdadero o falso dependiendo de si la bebida
+     *tiene o no cafeina
      *
      * @return Si la <code>Bebida</code> tiene cafeina
      */
@@ -22,6 +27,8 @@ public class Bebida extends Plato {
     }
 
     /**
+     *Devuelve verdadero o falso dependiendo de si la bebida
+     *tiene o no azucar
      *
      * @return Si la <code>Bebida</code> tiene azucar
      */

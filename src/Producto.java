@@ -1,4 +1,7 @@
 /**
+ * La calse <code>Producto</code> implementa el nombre
+ * y la descripcion de los productos.
+ *
  * @author Alberto Amigo y Sergio Delgado
  */
 public abstract class Producto {

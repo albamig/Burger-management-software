@@ -1,4 +1,7 @@
 /**
+ * La clase <code>Plato</code> implementa el precio y el numero
+ * de calorias de la clase <code>Producto</code> de la que hereda.
+ *
  * @author Alberto Amigo y Sergio Delgado
  */
 public abstract class Plato extends Producto {
