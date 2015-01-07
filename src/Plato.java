@@ -32,11 +32,9 @@ public abstract class Plato extends Producto {
         return numeroCalorias;
     }
 
-    /**
-     *
-     * @param numeroCalorias Numero de calorias del <code>Plato</code>
-     */
-    public void setNumeroCalorias(int numeroCalorias) {
+    public Plato(String nombre, String descripcion, double precio, int numeroCalorias) {
+        super(nombre, descripcion);
+        this.precio = precio;
         this.numeroCalorias = numeroCalorias;
     }
 }

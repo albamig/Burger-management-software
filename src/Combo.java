@@ -29,7 +29,8 @@ public class Combo extends Producto {
      *
      * @param grupoPlatos Lista de platos de los que esta formado el <code>Combo</code>
      */
-    public Combo(ArrayList<Plato> grupoPlatos) {
+    public Combo(String nombre, String descripcion, ArrayList<Plato> grupoPlatos) {
+        super(nombre, descripcion);
         this.grupoPlatos = grupoPlatos;
     }
 

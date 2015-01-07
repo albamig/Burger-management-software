@@ -18,25 +18,15 @@ public abstract class Producto {
 
     /**
      *
-     * @param nombre Nombre del <code>Producto</code>
-     */
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    /**
-     *
      * @return Descripcion del <code>Producto</code>
      */
     public String getDescripcion() {
         return descripcion;
     }
 
-    /**
-     *
-     * @param descripcion Descripcion del <code>Producto</code>
-     */
-    public void setDescripcion(String descripcion) {
+    public Producto(String nombre, String descripcion) {
+        super();
+        this.nombre = nombre;
         this.descripcion = descripcion;
     }
 }

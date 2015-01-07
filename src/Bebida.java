@@ -19,30 +19,13 @@ public class Bebida extends Plato {
     }
 
     /**
-     *
-     * @param tieneCafeina Opcion si la <code>Bebida</code> tiene cafeina
-     */
-    public void setTieneCafeina(boolean tieneCafeina) {
-        this.tieneCafeina = tieneCafeina;
-    }
-
-    /**
      *Devuelve verdadero o falso dependiendo de si la bebida
      *tiene o no azucar
      *
      * @return Si la <code>Bebida</code> tiene azucar
      */
-
     public boolean isTieneAzucar() {
         return tieneAzucar;
-    }
-
-    /**
-     *
-     * @param tieneAzucar Opcion si la <code>Bebida</code> tiene azucar
-     */
-    public void setTieneAzucar(boolean tieneAzucar) {
-        this.tieneAzucar = tieneAzucar;
     }
 
     /**
@@ -53,10 +36,8 @@ public class Bebida extends Plato {
      * @param tieneCafeina Opcion de si la <code>Bebida</code> tiene cafeina
      * @param tieneAzucar Opcion de si la <code>Bebida</code> tiene azucar
      */
-    public Bebida(String nombre, double precio, int calorias, boolean tieneCafeina, boolean tieneAzucar){
-        this.setNombre(nombre);
-        this.setPrecio(precio);
-        this.setNumeroCalorias(calorias);
+    public Bebida(String nombre, String descripcion, double precio, int calorias, boolean tieneCafeina, boolean tieneAzucar){
+        super(nombre, descripcion, precio, calorias);
         this.tieneAzucar = tieneCafeina;
         this.tieneCafeina = tieneAzucar;
     }

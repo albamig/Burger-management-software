@@ -27,14 +27,12 @@ public class Complemento extends Plato{
      *
      * @param nombre Nombre del <code>Complemento</code>
      * @param precio Precio del <code>Complemento</code>
-     * @param numeroPersonas Numero de comensales del <code>Complemento</code>
+     * @param numeroCalorias Numero de comensales del <code>Complemento</code>
      * @param calorias Numero de calorias del <code>Complemento</code>
      */
-    public Complemento(String nombre, double precio, int numeroPersonas, int calorias){
-        this.setNombre(nombre);
-        this.setPrecio(precio);
-        this.setNumeroCalorias(calorias);
-        numeroComensales = numeroPersonas;
+    public Complemento(String nombre, String descripcion, double precio, int numeroCalorias, int calorias){
+        super(nombre, descripcion, precio, numeroCalorias);
+        this.numeroComensales = numeroComensales;
 
     }
 }

@@ -32,10 +32,8 @@ public class Hamburguesa extends Plato {
      * @param calorias Numero de calorias de la <code>Hamburguesa</code>
      * @param ingredientes Lista de ingredientes de la <code>Hamburguesa</code>
      */
-    public Hamburguesa(String nombre, double precio, int calorias, ArrayList<String> ingredientes){
-        this.setNombre(nombre);
-        this.setPrecio(precio);
-        this.setNumeroCalorias(calorias);
+    public Hamburguesa(String nombre, String descripcion, double precio, int calorias, ArrayList<String> ingredientes){
+        super(nombre, descripcion, precio, calorias);
         this.ingredientes = ingredientes;
     }
 }
