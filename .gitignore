@@ -2,3 +2,4 @@
 .idea/.name
 *.iml
 out/*
+JavaDoc/*

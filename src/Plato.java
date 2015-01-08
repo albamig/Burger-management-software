@@ -10,7 +10,7 @@ public abstract class Plato extends Producto {
     private int numeroCalorias;
 
     /**
-     * Devuelve el precio del <code>Palto</code>
+     * Devuelve el precio del <code>Plato</code>
      *
      * @return Precio del <code>Plato</code>
      */
@@ -28,7 +28,7 @@ public abstract class Plato extends Producto {
     }
 
     /**
-     * Devuelve el numero de calorias del <code>Palto</code>
+     * Devuelve el numero de calorias del <code>Plato</code>
      *
      * @return Numero de calorias del <code>Plato</code>
      */
@@ -41,12 +41,15 @@ public abstract class Plato extends Producto {
      * precio y numero de calorias e inicializa el <code>Plato</code>
      *
      * @param nombre nombre del <code>Plato</code>
-     * @param descripcion descripcion del <code>Plto</code>
+     * @param descripcion descripcion del <code>Palto</code>
      * @param precio precio del <code>Plato</code>
      * @param numeroCalorias numero de calorias del <code>Plato</code>
      */
     public Plato(String nombre, String descripcion, double precio, int numeroCalorias) {
         super(nombre, descripcion);
+        if (precio < 0 || numeroCalorias < 0) {
+            throw new ExceptionNegativo();
+        }
         this.precio = precio;
         this.numeroCalorias = numeroCalorias;
     }
