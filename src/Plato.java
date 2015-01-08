@@ -47,9 +47,9 @@ public abstract class Plato extends Producto {
      */
     public Plato(String nombre, String descripcion, double precio, int numeroCalorias) {
         super(nombre, descripcion);
-        if (precio < 0 || numeroCalorias < 0) {
-            throw new ExceptionNegativo();
-        }
+        assert (precio > 0);
+        assert (numeroCalorias > 0);
+
         this.precio = precio;
         this.numeroCalorias = numeroCalorias;
     }

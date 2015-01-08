@@ -38,6 +38,7 @@ public class Complemento extends Plato{
      */
     public Complemento(String nombre, String descripcion, double precio, int numeroCalorias, int numeroComensales){
         super(nombre, descripcion, precio, numeroCalorias);
+        assert (numeroComensales > 0);
         this.numeroComensales = numeroComensales;
 
     }

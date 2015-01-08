@@ -39,6 +39,7 @@ public class Hamburguesa extends Plato {
      */
     public Hamburguesa(String nombre, String descripcion, double precio, int calorias, ArrayList<String> ingredientes){
         super(nombre, descripcion, precio, calorias);
+        assert (ingredientes.size() > 0);
         this.ingredientes = ingredientes;
     }
 }

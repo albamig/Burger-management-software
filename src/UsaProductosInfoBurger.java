@@ -25,17 +25,22 @@ public class UsaProductosInfoBurger {
         ArrayList<String> ingredientes = new ArrayList<String>();
         ingredientes.add("Lechuga" + " Queso" + "Tomate" + "Cebolla" + "Ketchup");
         ArrayList<Plato> pedido = new ArrayList<Plato>();
-        Hamburguesa hamburguesaConQueso = new Hamburguesa("Hamburguesa con queso", "", 2.85, 500, ingredientes);
-        Bebida infocola = new Bebida("InfoCola", "", 1.50, 150, true, true);
-        Complemento alitas = new Complemento("Alitas de pollo", "", 4.35, 5, 700);
-        pedido.add(hamburguesaConQueso);
-        pedido.add(infocola);
-        pedido.add(alitas);
-        Combo menu = new Combo("menu", "", pedido);
-        System.out.println("El precio del pedido sin combo es: 8.7 euros \n");
-        System.out.println("El precio del combo es: " + menu.getPrecio() + "euros \n");
-        System.out.println("El numero de calorias del combo es: " +  menu.getNumeroCalorias() + "calorias \n");
-        imprimeCarta(pedido);
+        try {
+            Hamburguesa hamburguesaConQueso = new Hamburguesa("Hamburguesa con queso", "", 2.85, 500, ingredientes);
+            Bebida infocola = new Bebida("InfoCola", "", -1.50, 150, true, true);
+            Complemento alitas = new Complemento("Alitas de pollo", "", 4.35, 5, 700);
+            pedido.add(hamburguesaConQueso);
+            pedido.add(infocola);
+            pedido.add(alitas);
+            Combo menu = new Combo("menu", "", pedido);
+            System.out.println("El precio del pedido sin combo es: 8.7 euros \n");
+            System.out.println("El precio del combo es: " + menu.getPrecio() + "euros \n");
+            System.out.println("El numero de calorias del combo es: " +  menu.getNumeroCalorias() + "calorias \n");
+            imprimeCarta(pedido);
+        } catch (AssertionError error){
+            System.out.println(error);
+        }
+
 
 
     }
