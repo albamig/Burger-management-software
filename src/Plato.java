@@ -37,7 +37,7 @@ public abstract class Plato extends Producto {
     }
 
     /**
-     * Constructor que recive cuatro parametros: nombre, descripcion,
+     * Constructor que recibe cuatro parametros: nombre, descripcion,
      * precio y numero de calorias e inicializa el <code>Plato</code>
      *
      * @param nombre nombre del <code>Plato</code>

@@ -29,7 +29,7 @@ public class Hamburguesa extends Plato {
     }
 
     /**
-     * Constructor que recive cuatro parametros: nombre, precio
+     * Constructor que recibe cuatro parametros: nombre, precio
      * calorias e ingredientes e inicializa la <code>Hamburguesa</code>
      *
      * @param nombre Nombre de la <code>Hamburguesa</code>

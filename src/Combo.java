@@ -29,7 +29,7 @@ public class Combo extends Producto {
     }
 
     /**
-     * Constructor que recive tres parametros: nombre, descripcion y
+     * Constructor que recibe tres parametros: nombre, descripcion y
      * grupoPlatos con los cuales inicizliza el <code>Combo</code>
      *
      * @param nombre Nombre del <code>Combo</code>

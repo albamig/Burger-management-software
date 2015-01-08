@@ -27,7 +27,7 @@ public class Complemento extends Plato{
     }
 
     /**
-     *Constructor que recive cuatro parametros: nombre, precio,
+     *Constructor que recibe cuatro parametros: nombre, precio,
      * numero de calorias y numero de comensales e inicializa
      * el <code>Complemento</code>
      *

@@ -10,7 +10,7 @@ public abstract class Producto {
     private String descripcion;
 
     /**
-     * Devuelve el no,br del <code>Producto</code>
+     * Devuelve el nombre del <code>Producto</code>
      *
      * @return Nombre del <code>Producto</code>
      */
@@ -28,7 +28,7 @@ public abstract class Producto {
     }
 
     /**
-     * Constructor que recive dos parametros: nombre y descripcion
+     * Constructor que recibe dos parametros: nombre y descripcion
      * e inicializa el <code>Producto</code>
      *
      * @param nombre nombre del <code>Producto</code>

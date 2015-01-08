@@ -30,7 +30,7 @@ public class Bebida extends Plato {
     }
 
     /**
-     *Constructor que recive cinco parametros: nombre, precio
+     *Constructor que recibe cinco parametros: nombre, precio
      * calorias, las opciones de si tiene cafeina o si tiene azucar
      * e inicializa la <code>Bebida</code>
      *
