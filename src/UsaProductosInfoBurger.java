@@ -2,7 +2,8 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Alberto Amigo y Sergio Delgado
+ * @author Alberto Amigo
+ * @author Sergio Delgado
  */
 public class UsaProductosInfoBurger {
     /**

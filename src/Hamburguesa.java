@@ -4,12 +4,14 @@ import java.util.ArrayList;
  * La clase <code>Hamburguesa</code> implementa las caracteristicas
  * del <code>Plato</code> hamburguesa.
  *
- *@author Alberto Amigo y Sergio Delgado
+ *@author Alberto Amigo
+ *@author Sergio Delgado
  */
 public class Hamburguesa extends Plato {
     private ArrayList<String> ingredientes;
 
     /**
+     *Devuelve la lista de ingredientes de la <code>Hamburguesa</code>
      *
      * @return Lista de ingredientes de la <code>Hamburguesa</code>
      */
@@ -18,6 +20,7 @@ public class Hamburguesa extends Plato {
     }
 
     /**
+     * Permite seleccionar la lista de ingredientes de la <code>Hamburguesa</code>
      *
      * @param ingeredientes Lista de ingredientes de la <code>Hamburguesa</code>
      */
@@ -26,6 +29,8 @@ public class Hamburguesa extends Plato {
     }
 
     /**
+     * Constructor que recive cuatro parametros: nombre, precio
+     * calorias e ingredientes e inicializa la <code>Hamburguesa</code>
      *
      * @param nombre Nombre de la <code>Hamburguesa</code>
      * @param precio Precio de la <code>Hamburguesa</code>

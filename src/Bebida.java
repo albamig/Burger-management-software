@@ -2,7 +2,8 @@
  *La clase <code>Bebida</code> implementa las caracteristicas
  * del <code>Plato</code> Bebida.
  *
- *@author Alberto Amigo y Sergio Delgado
+ *@author Alberto Amigo
+ *@author Sergio Delgado
  */
 public class Bebida extends Plato {
     private boolean tieneCafeina;
@@ -29,6 +30,9 @@ public class Bebida extends Plato {
     }
 
     /**
+     *Constructor que recive cinco parametros: nombre, precio
+     * calorias, las opciones de si tiene cafeina o si tiene azucar
+     * e inicializa la <code>Bebida</code>
      *
      * @param nombre Nombre de la <code>Bebida</code>
      * @param precio Precio de la <code>Bebida</code>

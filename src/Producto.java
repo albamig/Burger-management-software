@@ -2,13 +2,15 @@
  * La calse <code>Producto</code> implementa el nombre
  * y la descripcion de los productos.
  *
- * @author Alberto Amigo y Sergio Delgado
+ * @author Alberto Amigo
+ * @author Sergio Delgado
  */
 public abstract class Producto {
     private String nombre;
     private String descripcion;
 
     /**
+     * Devuelve el no,br del <code>Producto</code>
      *
      * @return Nombre del <code>Producto</code>
      */
@@ -17,6 +19,7 @@ public abstract class Producto {
     }
 
     /**
+     * Devuelve la descripcion del <code>Producto</code>
      *
      * @return Descripcion del <code>Producto</code>
      */
@@ -24,6 +27,13 @@ public abstract class Producto {
         return descripcion;
     }
 
+    /**
+     * Constructor que recive dos parametros: nombre y descripcion
+     * e inicializa el <code>Producto</code>
+     *
+     * @param nombre nombre del <code>Producto</code>
+     * @param descripcion descripcion del <code>Producto</code>
+     */
     public Producto(String nombre, String descripcion) {
         super();
         this.nombre = nombre;

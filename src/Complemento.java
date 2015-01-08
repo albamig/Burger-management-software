@@ -2,12 +2,14 @@
  * La clase <code>Complemento</code> implementa las
  * caracteristicas del <code>Plato</code> complemento.
  *
- *@author Alberto Amigo y Sergio Delgado
+ *@author Alberto Amigo
+ *@author Sergio Delgado
  */
 public class Complemento extends Plato{
     private int numeroComensales;
 
     /**
+     *Devuelve el nuemro de comensales del <code>Complemento</code>
      *
      * @return Numero de comensales del <code>Complemento</code>
      */
@@ -16,6 +18,7 @@ public class Complemento extends Plato{
     }
 
     /**
+     * Permite seleccionar el numero de comensales del <code>Complemento</code>
      *
      * @param numeroComensales Numero de comensales del <code>Complemento</code>
      */
@@ -24,13 +27,16 @@ public class Complemento extends Plato{
     }
 
     /**
+     *Constructor que recive cuatro parametros: nombre, precio,
+     * numero de calorias y numero de comensales e inicializa
+     * el <code>Complemento</code>
      *
      * @param nombre Nombre del <code>Complemento</code>
      * @param precio Precio del <code>Complemento</code>
-     * @param numeroCalorias Numero de comensales del <code>Complemento</code>
-     * @param calorias Numero de calorias del <code>Complemento</code>
+     * @param numeroComensales Numero de comensales del <code>Complemento</code>
+     * @param numeroCalorias Numero de calorias del <code>Complemento</code>
      */
-    public Complemento(String nombre, String descripcion, double precio, int numeroCalorias, int calorias){
+    public Complemento(String nombre, String descripcion, double precio, int numeroCalorias, int numeroComensales){
         super(nombre, descripcion, precio, numeroCalorias);
         this.numeroComensales = numeroComensales;
 
