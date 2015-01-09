@@ -45,6 +45,7 @@ public class Combo extends Producto {
      * @param nombre Nombre del <code>Combo</code>
      * @param descripcion Descripcion dle <code>Combo</code>
      * @param grupoPlatos Lista de los <code>Platos</code> de los que se compone el <code>Combo</code>
+     * que ha de cumplir la precondicion de grupoDePlatos.size() > 0
      */
     public Combo(String nombre, String descripcion, ArrayList<Plato> grupoPlatos) {
         super(nombre, descripcion);
@@ -59,7 +60,9 @@ public class Combo extends Producto {
      * @param nombre Nombre del <code>Combo</code>
      * @param descripcion Descripcion dle <code>Combo</code>
      * @param grupoPlatos Lista de los <code>Platos</code> de los que se compone el <code>Combo</code>
+     * que ha de cumplir la precondicion de grupoDePlatos.size() > 0
      * @param descuento Porcentaje de descueno del <code>Combo</code>
+     * que ha de cumplir la precondicion de descuento > 0
      */
     public Combo(String nombre, String descripcion, ArrayList<Plato> grupoPlatos, double descuento) {
         super(nombre, descripcion);
@@ -101,13 +104,17 @@ public class Combo extends Producto {
         return numeroCalorias;
     }
 
-    public void añadirPlato (Plato plato) {
-        grupoPlatos.add(plato);
-    }
-
+    /**
+     * Añade los elementos del parametro <code>Combo</code> al <code>Combo</code>
+     * objetivo.
+     *
+     * @param combo <code>Combo</code> que se añadira al <code>Combo</code> objetivo.
+     */
     public void añadirCombo(Combo combo) {
         for (int i = 0; i < combo.getGrupoPlatos().size(); i++) {
             grupoPlatos.add(combo.getGrupoPlatos().get(i));
         }
     }
+
+
 }

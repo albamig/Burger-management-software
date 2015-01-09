@@ -35,8 +35,10 @@ public abstract class Producto {
      * Constructor que recibe dos parametros: nombre y descripcion
      * e inicializa el <code>Producto</code>
      *
-     * @param nombre nombre del <code>Producto</code>
-     * @param descripcion descripcion del <code>Producto</code>
+     * @param nombre nombre del <code>Producto</code> que ha de cumplir la
+     * precondicion de nombre != null
+     * @param descripcion descripcion del <code>Producto</code> que ha de cumplir la
+     * precondicion de descripcion != null
      */
     public Producto(String nombre, String descripcion) {
         super();

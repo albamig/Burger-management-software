@@ -45,8 +45,10 @@ public abstract class Plato extends Producto {
      *
      * @param nombre nombre del <code>Plato</code>
      * @param descripcion descripcion del <code>Palto</code>
-     * @param precio precio del <code>Plato</code>
-     * @param numeroCalorias numero de calorias del <code>Plato</code>
+     * @param precio precio del <code>Plato</code> que ha de cumplir
+     * la precondicion de precio > 0
+     * @param numeroCalorias numero de calorias del <code>Plato</code> que ha de cumplir
+     * la precondicion de numeroDeCalorias > 0
      */
     public Plato(String nombre, String descripcion, double precio, int numeroCalorias) {
         super(nombre, descripcion);

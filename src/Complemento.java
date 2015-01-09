@@ -33,6 +33,7 @@ public class Complemento extends Plato{
      * @param nombre Nombre del <code>Complemento</code>
      * @param precio Precio del <code>Complemento</code>
      * @param numeroComensales Numero de comensales del <code>Complemento</code>
+     * que ha de cumplir la precondicion de numero de comensales > 0
      * @param numeroCalorias Numero de calorias del <code>Complemento</code>
      */
     public Complemento(String nombre, String descripcion, double precio, int numeroCalorias, int numeroComensales){

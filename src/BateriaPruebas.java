@@ -184,11 +184,6 @@ public class BateriaPruebas {
         if (comb1.getGrupoPlatos().size() < grupoPlatos.size()) {
             System.out.println("Error en añadirCombo()");
         }
-        comb2.añadirPlato(hamb2);
-        if (comb2.getGrupoPlatos().size() < grupoPlatos2.size()) {
-            System.out.println("Error en añadirPlato()");
-        }
-
 
     }
 

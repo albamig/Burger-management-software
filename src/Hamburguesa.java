@@ -27,6 +27,7 @@ public class Hamburguesa extends Plato {
      * @param precio Precio de la <code>Hamburguesa</code>
      * @param calorias Numero de calorias de la <code>Hamburguesa</code>
      * @param ingredientes Lista de ingredientes de la <code>Hamburguesa</code>
+     * que ha de cumplir la precondicion de ingredientes.size > 0
      */
     public Hamburguesa(String nombre, String descripcion, double precio, int calorias, ArrayList<String> ingredientes){
         super(nombre, descripcion, precio, calorias);
