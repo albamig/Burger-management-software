@@ -27,7 +27,7 @@ public class UsaProductosInfoBurger {
         ArrayList<Plato> pedido = new ArrayList<Plato>();
         try {
             Hamburguesa hamburguesaConQueso = new Hamburguesa("Hamburguesa con queso", "", 2.85, 500, ingredientes);
-            Bebida infocola = new Bebida("InfoCola", "", -1.50, 150, true, true);
+            Bebida infocola = new Bebida("InfoCola", "", 1.50, 150, true, true);
             Complemento alitas = new Complemento("Alitas de pollo", "", 4.35, 5, 700);
             pedido.add(hamburguesaConQueso);
             pedido.add(infocola);

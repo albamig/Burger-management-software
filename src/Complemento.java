@@ -7,7 +7,6 @@
  */
 public class Complemento extends Plato{
     private int numeroComensales;
-
     /**
      *Devuelve el nuemro de comensales del <code>Complemento</code>
      *

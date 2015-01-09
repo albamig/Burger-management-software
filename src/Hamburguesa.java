@@ -20,15 +20,6 @@ public class Hamburguesa extends Plato {
     }
 
     /**
-     * Permite seleccionar la lista de ingredientes de la <code>Hamburguesa</code>
-     *
-     * @param ingeredientes Lista de ingredientes de la <code>Hamburguesa</code>
-     */
-    public void setIngeredientes(ArrayList<String> ingeredientes) {
-        this.ingredientes = ingeredientes;
-    }
-
-    /**
      * Constructor que recibe cuatro parametros: nombre, precio
      * calorias e ingredientes e inicializa la <code>Hamburguesa</code>
      *

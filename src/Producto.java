@@ -27,6 +27,10 @@ public abstract class Producto {
         return descripcion;
     }
 
+    public abstract double getPrecio();
+
+    public abstract int getNumeroCalorias();
+
     /**
      * Constructor que recibe dos parametros: nombre y descripcion
      * e inicializa el <code>Producto</code>

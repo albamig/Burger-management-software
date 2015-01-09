@@ -39,15 +39,6 @@ public class Combo extends Producto {
     }
 
     /**
-     * Permite seleccionar los platos de los que se compondra el <code>Combo</code>
-     *
-     * @param grupoPlatos Lista de platos de los que esta formado el <code>Combo</code>
-     */
-    public void setGrupoPlatos(ArrayList<Plato> grupoPlatos) {
-        this.grupoPlatos = grupoPlatos;
-    }
-
-    /**
      * Constructor que recibe tres parametros: nombre, descripcion y
      * grupoPlatos con los cuales inicizliza el <code>Combo</code>
      *
@@ -83,6 +74,7 @@ public class Combo extends Producto {
      *
      * @return Precio del <code>Combo</code>
      */
+    @Override
     public double getPrecio() {
         double precio = 0;
 
@@ -90,7 +82,7 @@ public class Combo extends Producto {
             precio += grupoPlatos.get(i).getPrecio();
         }
 
-        return precio*(1-(descuento/100));
+        return precio*(1-descuento/100);
     }
 
     /**
@@ -98,6 +90,7 @@ public class Combo extends Producto {
      *
      * @return Numero de calorias del <code>Combo</code>
      */
+    @Override
     public int getNumeroCalorias() {
         int numeroCalorias = 0;
 
@@ -108,4 +101,13 @@ public class Combo extends Producto {
         return numeroCalorias;
     }
 
+    public void añadirPlato (Plato plato) {
+        grupoPlatos.add(plato);
+    }
+
+    public void añadirCombo(Combo combo) {
+        for (int i = 0; i < combo.getGrupoPlatos().size(); i++) {
+            grupoPlatos.add(combo.getGrupoPlatos().get(i));
+        }
+    }
 }

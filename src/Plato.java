@@ -14,6 +14,7 @@ public abstract class Plato extends Producto {
      *
      * @return Precio del <code>Plato</code>
      */
+    @Override
     public double getPrecio() {
         return precio;
     }
@@ -32,6 +33,7 @@ public abstract class Plato extends Producto {
      *
      * @return Numero de calorias del <code>Plato</code>
      */
+    @Override
     public int getNumeroCalorias() {
         return numeroCalorias;
     }
@@ -48,9 +50,8 @@ public abstract class Plato extends Producto {
     public Plato(String nombre, String descripcion, double precio, int numeroCalorias) {
         super(nombre, descripcion);
         assert (precio > 0);
-        assert (numeroCalorias > 0);
-
         this.precio = precio;
+        assert (numeroCalorias > 0);
         this.numeroCalorias = numeroCalorias;
     }
 }
