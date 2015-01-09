@@ -48,7 +48,7 @@ public class Combo extends Producto {
      */
     public Combo(String nombre, String descripcion, ArrayList<Plato> grupoPlatos) {
         super(nombre, descripcion);
-        assert (grupoPlatos.size() > 0);
+        assert (grupoPlatos.size() > 1);
         this.grupoPlatos = grupoPlatos;
     }
 
@@ -63,9 +63,9 @@ public class Combo extends Producto {
      */
     public Combo(String nombre, String descripcion, ArrayList<Plato> grupoPlatos, double descuento) {
         super(nombre, descripcion);
-        assert (grupoPlatos.size() > 0);
-        assert (descuento > 0);
+        assert (grupoPlatos.size() > 1);
         this.grupoPlatos = grupoPlatos;
+        assert (descuento > 0);
         this.descuento = descuento;
     }
 

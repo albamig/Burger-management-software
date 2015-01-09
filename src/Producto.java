@@ -41,8 +41,8 @@ public abstract class Producto {
     public Producto(String nombre, String descripcion) {
         super();
         assert (nombre != null);
-        assert (descripcion != null);
         this.nombre = nombre;
+        assert (descripcion != null);
         this.descripcion = descripcion;
     }
 }

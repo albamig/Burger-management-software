@@ -42,7 +42,7 @@ public class Bebida extends Plato {
      */
     public Bebida(String nombre, String descripcion, double precio, int calorias, boolean tieneCafeina, boolean tieneAzucar){
         super(nombre, descripcion, precio, calorias);
-        this.tieneAzucar = tieneCafeina;
-        this.tieneCafeina = tieneAzucar;
+        this.tieneAzucar = tieneAzucar;
+        this.tieneCafeina = tieneCafeina;
     }
 }

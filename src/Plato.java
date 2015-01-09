@@ -25,6 +25,7 @@ public abstract class Plato extends Producto {
      * @param precio Precio del <code>Plato</code>
      */
     public void setPrecio(double precio) {
+        assert precio > 0;
         this.precio = precio;
     }
 
